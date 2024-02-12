@@ -17,5 +17,18 @@ function triangleCalculate(){
 }
 // rectangel
 function rectangleCalculate(){
-
+    // width
+    const rectangleWidth = document.getElementById('rectangle_width');
+    const widthValue = rectangleWidth.value;
+    const width = parseFloat(widthValue);
+    // length
+    const rectangleLength = document.getElementById('rectangle_length');
+    const lengthValue = rectangleLength.value;
+    const length = parseFloat(lengthValue);
+    // calculate 
+    const ressult = width * length;
+    // show result
+    const resultValue = document.getElementById('rectangle_output');
+    resultValue.innerText = ressult;
+    // console.log(ressult);
 }
