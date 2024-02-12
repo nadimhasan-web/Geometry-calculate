@@ -1,4 +1,5 @@
-function calculate(){
+// triangle
+function triangleCalculate(){
     // base input
     const inputBase = document.getElementById('input_base');
     const baseValue = inputBase.value;
@@ -13,4 +14,8 @@ function calculate(){
     const resultValue = document.getElementById('area_output');
     resultValue.innerText = ressult;
     console.log(resultValue);
+}
+// rectangel
+function rectangleCalculate(){
+
 }
