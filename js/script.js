@@ -1,4 +1,4 @@
-// triangle
+// triangle calculation
 function triangleCalculate(){
     // base input
     const inputBase = document.getElementById('input_base');
@@ -13,9 +13,8 @@ function triangleCalculate(){
     // show result
     const resultValue = document.getElementById('area_output');
     resultValue.innerText = ressult;
-    console.log(resultValue);
 }
-// rectangel
+// rectangel calculation
 function rectangleCalculate(){
     // width
     const rectangleWidth = document.getElementById('rectangle_width');
@@ -25,10 +24,25 @@ function rectangleCalculate(){
     const rectangleLength = document.getElementById('rectangle_length');
     const lengthValue = rectangleLength.value;
     const length = parseFloat(lengthValue);
-    // calculate 
+    // calculate result
     const ressult = width * length;
     // show result
     const resultValue = document.getElementById('rectangle_output');
     resultValue.innerText = ressult;
-    // console.log(ressult);
+}
+// parallelogram calculation
+function parallelogramCalculate(){
+    // base
+    const parallelogramBase = document.getElementById('parallelogram_base');
+    const baseValue = parallelogramBase.value;
+    const base = parseFloat(baseValue);
+    // height
+    const parallelogramHeight = document.getElementById('parallelogram_height');
+    const heightValue = parallelogramHeight.value;
+    const height = parseFloat(heightValue);
+    // calculate result
+    const result  = base * height;
+    // show result
+    const showResult = document.getElementById('parallelogram_output');
+    showResult.innerText = result;
 }
