@@ -1,6 +1,6 @@
 function ellipseCalculation(){
-    const ellipseArea = getInputValueById('ellips_area');
-    const ellipseBase = getInputValueById('ellips_base');
+    const ellipseArea = getInputValueById('ellipse_area');
+    const ellipseBase = getInputValueById('ellipse_base');
     const ressult = 3.1416 * ellipseArea * ellipseBase;
     console.log(ressult);
     console.log('hewijjflksd')
