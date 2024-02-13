@@ -46,3 +46,19 @@ function parallelogramCalculate(){
     const showResult = document.getElementById('parallelogram_output');
     showResult.innerText = result;
 }
+// ellipse calculation
+// function ellipseCalculation(){
+//     // area
+//     const ellipseArea = document.getElementById('ellipse_area');
+//     const areaValue = ellipseArea.value;
+//     const area = parseFloat(areaValue);
+//     // base
+//     const ellipseBase = document.getElementById('ellipse_base');
+//     const baseValue = ellipseBase.value;
+//     const base = parseFloat(baseValue);
+//     // calculation
+//     const result = 3.1416 * area * base;
+//     // show result
+//     const showResult = document.getElementById('ellipse_output');
+//     showResult.innerText = result;
+// }

@@ -11,16 +11,16 @@
     <main class="m-5">
         <div class="flex gap-4">
             <!-- geometry -->
-            <div class="flex grid-cols-3 gap-4">
+            <div class="grid grid-cols-3 gap-4">
                 <!-- triangle -->
-                <div class="p-8 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
                     <img class="h-48" src="images/triangle.png" alt="triangel">
                     <h2 class="text-2xl font-bold">Triangle</h2>
                     <p>Area (A) = 0.5 x b x h</p>
                     <div class="flex">
-                        <input id="input_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="b">
+                        <input id="input_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="base">
                         <p class="mr-5 ml-2">cm</p>
-                        <input id="input_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="b">
+                        <input id="input_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="height">
                         <p class="mr-5 ml-2">cm</p>
                     </div>
                     <div>
@@ -29,14 +29,14 @@
                     <button onclick="triangleCalculate()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- rectangle -->
-                <div class="p-8 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
                     <img class="h-48" src="images/rectangle.png" alt="triangel">
                     <h2 class="text-2xl font-bold">Rectangle</h2>
                     <p>Area (A) = w x l</p>
                     <div class="flex">
-                        <input id="rectangle_width" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="w">
+                        <input id="rectangle_width" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="width">
                         <p class="mr-5 ml-2">cm</p>
-                        <input id="rectangle_length" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="l">
+                        <input id="rectangle_length" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="length">
                         <p class="mr-5 ml-2">cm</p>
                     </div>
                     <div>
@@ -45,20 +45,68 @@
                     <button onclick="rectangleCalculate()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- parallelogram -->
-                <div class="p-8 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
                     <img class="h-48" src="images/parallelogram.png" alt="triangel">
                     <h2 class="text-2xl font-bold">Parallelogram</h2>
                     <p>Area (A) = b x h</p>
                     <div class="flex">
-                        <input id="parallelogram_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="b">
+                        <input id="parallelogram_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="base">
                         <p class="mr-5 ml-2">cm</p>
-                        <input id="parallelogram_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-14" type="text" placeholder="h">
+                        <input id="parallelogram_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="height">
                         <p class="mr-5 ml-2">cm</p>
                     </div>
                     <div>
                         <p class="font-bold">Area: <span id="parallelogram_output"></span> <span>cm<sup>2</sup></span></p>
                     </div>
                     <button onclick="parallelogramCalculate()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
+                </div>
+                <!-- rhombus -->
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                    <img class="h-48" src="images/rhombus.png" alt="triangel">
+                    <h2 class="text-2xl font-bold">Rhombus</h2>
+                    <p>Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub></p>
+                    <div class="flex">
+                        <input id="parallelogram_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="d1">
+                        <p class="mr-5 ml-2">cm</p>
+                        <input id="parallelogram_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="d2">
+                        <p class="mr-5 ml-2">cm</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Area: <span id="parallelogram_output"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <button onclick="parallelogramCalculate()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
+                </div>
+                <!-- pentagon -->
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                    <img class="h-48" src="images/pentagon.png" alt="triangel">
+                    <h2 class="text-2xl font-bold">Pentagon</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <div class="flex">
+                        <input id="parallelogram_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="p">
+                        <p class="mr-5 ml-2">cm</p>
+                        <input id="parallelogram_height" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="b">
+                        <p class="mr-5 ml-2">cm</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Area: <span id="parallelogram_output"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <button onclick="parallelogramCalculate()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
+                </div>
+                <!-- ellipse -->
+                <div class="p-8 col-span-1 w-80 flex items-center justify-center flex-col gap-4 border-2 rounded-xl border-gray-500">
+                    <img class="h-48" src="images/ellipse.png" alt="triangel">
+                    <h2 class="text-2xl font-bold">Ellipse</h2>
+                    <p>Area (A) = π x a x b</p>
+                    <div class="flex">
+                        <input id="ellipse_area" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="area">
+                        <p class="mr-5 ml-2">cm</p>
+                        <input id="ellipse_base" class="bg-gray-300 placeholder-black rounded-lg p-2 text-black outline-none w-16" type="text" placeholder="base">
+                        <p class="mr-5 ml-2">cm</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Area: <span id="ellipse_output"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+                    <button onclick="ellipseCalculation()" class="w-full p-2 bg-blue-600 text-2xl font-bold text-white">Calculate</button>
                 </div>
             </div>
             <!-- calculate -->
@@ -70,5 +118,6 @@
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/function.js"></script>
 </body>
 </html>
